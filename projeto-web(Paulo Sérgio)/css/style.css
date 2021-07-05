@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
+
+table{
+    width: 700px;
+    margin: 0 auto;
+}
+
+table, td, th{
+    border: solid 1px #000;
+}
+
+#div-form{
+    text-align: center;
+}
+
+body{
+    background: linear-gradient(45deg, rgb(77, 63, 49), rgb(63, 35, 10));
+}
+
+form div {
+    margin: 20px;
+}
+
+form label{
+    display: block;
+    font-weight: bold;
+}
+
+header {
+	grid-area: header;
+}
+
+.menu {
+	grid-area: menu;
+}
+
+
+main {
+	grid-area: main;
+}
+
+footer {
+	grid-area: footer;
+}
+
+.container {
+    display: grid;
+    /* grid-template-columns: 30% 50% 20%; */
+    grid-template-rows: 10% 8% auto 10%;
+    grid-template-areas:
+        'header'
+        'menu'
+        'main'
+        'footer';
+    grid-gap: 10px;
+    height: 100%;
+    width: 98%;
+    margin: auto;
+}
+
+header, main, footer, .menu {
+    background: linear-gradient(45deg, rgb(156, 147, 135), rgb(104, 91, 75));
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    font-family: "Poppins";
+    color: rgb(44, 28, 5);
+}
+
+input, textarea, select{
+    width: 400px;
+    height: 35px;
+    border-radius: 5px;
+    font-family: "Poppins";
+}
+
+textarea{
+    height: 150px;
+    font-family: "Poppins";
+}
+
+button{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    background: linear-gradient(45deg, rgb(66, 61, 57), rgb(54, 37, 10));
+    font-family: "Poppins";
+}
+
+button:hover{
+    background-color: rgb(53, 32, 6);
+    cursor: pointer;
+    transition: all 0.8s;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+ul li{
+    margin: 5px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgb(70, 48, 17);
+}
+
+ul li:hover{
+    background-color: rgb(82, 72, 62);
+    cursor: pointer;
+    transition: all 0.8s;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+#btn-limpar-sessao{
+    margin: 30px auto;
+    background: linear-gradient(45deg, rgb(59, 49, 39), rgb(37, 20, 5));
+    border-radius: 8px;
+    font-family: "Poppins";
+    width: 100px;
+    display: table;
+    height: 35px;
+}
+
+img{
+    width: 600px;
+    padding-left: 0px;
+    padding-bottom: 100px;
+}
+
+#btn-limpar-sessao a{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.msg_cad_cont{
+    border: 1px solid rgb(53, 32, 9);
+    font-family: "Poppins";
+    color:rgb(49, 40, 33);
+    margin: 10px, auto;
+    padding: 5px;
+}
+
+h2{
+    text-align: center;
+}
